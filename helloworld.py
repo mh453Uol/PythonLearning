@@ -51,3 +51,19 @@ print("foo bar".capitalize()) # Foo bar
 print("hallo".replace("a","e")) # hello
 print("hello".isalpha()) # check if 1 or more alphabetic letter
 print("123".isdigit() == True) # useful if convert to int
+
+splittedByComma = "Python,is,weird".split(",")
+print(splittedByComma) # array
+
+food = ["tuna","mayo","lunch"]
+print(food)
+
+# formatting strings
+print("Hi, my name is {0}. I am at {1}".format("Majid", "home"))
+
+name = "Majid"
+machine = "MIST"
+
+# name and machine variable are automatically added
+sentence = f"Nice to meet you {name}. I am {machine}"
+print(sentence)
