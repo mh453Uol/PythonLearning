@@ -67,3 +67,94 @@ machine = "MIST"
 # name and machine variable are automatically added
 sentence = f"Nice to meet you {name}. I am {machine}"
 print(sentence)
+
+# Boolean and none
+
+is_sunny = True;
+is_windy = False;
+
+if(is_sunny):
+    print("Its sunny today");
+
+# Casting Booleans
+
+#int(isSunny) returns 1 is true or 0 if false
+if(int(is_sunny) == 1):
+    print("Its Sunny Today");
+
+if(int(is_sunny) == 0):
+    print("Its Not Sunny Today");
+
+#str(isSunny) returns "True"
+
+if(str(is_sunny) == "True"):
+    print("Its Sunny Today");
+
+# Null or None
+
+# Null are good for placeholders
+aliens_found = None
+
+# having a unassigned variable is 
+# illegal in python
+# This doesnt work (below)
+# _is_aliens_found = ""
+
+# Another if style
+
+numer = 5
+
+if numer == 5:
+    print("Number is 5")
+else:
+    print("Numer is NOT 5")
+
+# Truthy and Falsy Values
+
+# Truthy 
+#   - Number which is > 0
+#   - String which lenght is > 0
+#   - List or array length > 0
+
+#Falsy
+#   - Number which is < 0
+#   - String which is empty
+#   - List or array length < 0
+#   - None
+
+number = 0
+if number:
+    print("This will NOT execute because of falsy")
+
+if "":
+    print("This will NOT execute because of falsy")
+
+if []:
+    print("This will NOT execute because of FASLY")
+
+if None:
+    print("This will NOT execute because of FALSY")
+
+if number != 0:
+    print("This will NOT execute because number is 0")
+
+# aliens_found = false so not is like !aliens_found
+if not aliens_found:
+    print("Let wait til 2020")
+
+# multiple conditions
+if not aliens_found and number == 0:
+    print("This will execute since aliens are not found and number is equal to 0")
+
+if True or False:
+    print("This will execute since its a XOR")
+
+# Tenary If Statement
+
+a = 1
+b = 2
+
+# In english bigger if a > b else smaller
+output = "bigger" if a > b else "smaller"
+print(output)
+
