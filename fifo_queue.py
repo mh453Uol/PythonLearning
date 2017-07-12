@@ -6,8 +6,10 @@ queue = []
 def get_queue():
     return queue
 
-def push(element):
+def push(element,*args):
     queue.append(element)
+    for arg in args:
+        queue.append(arg)
 
 def pop():
     shift_index = 1
@@ -20,14 +22,13 @@ def pop():
 def get_queue_size(lists:[]):
     return len(lists)
 
-push(1)
+push(-2,-1,0)
+print(queue)
 push(2)
 print(queue)
 push(3)
 print(queue)
 push(4)
-print(queue)
-push(5)
 print(queue)
 pop()
 print(queue)
