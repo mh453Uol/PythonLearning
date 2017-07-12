@@ -10,7 +10,6 @@ def push(element):
     queue.append(element)
 
 def pop():
-    queue[0] = None
     shift_index = 1
 
     while shift_index < get_queue_size(queue):
