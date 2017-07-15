@@ -1,2 +1,2 @@
 # PythonLearning
-Getting started with Python
+Getting started with Python.
