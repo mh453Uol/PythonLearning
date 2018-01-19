@@ -1,6 +1,4 @@
-students = [
-    {"name":"suhan alI SHAH","id":1},
-]
+students = []
 countIndex = 0 # this variable is in the main scope
 
 def get_student_titlecase(students):
@@ -37,7 +35,29 @@ def add_student(name,id = 1):
     else:
         students.append({"name": name, "id": id})
 
-add_student("majid hussain")
+def read_file(name):
+    try:
+        f = open(name,"r")
+        for student in f.readlines():
+            add_student(student)
+        f.close()
+    except Exception:
+        print("Count not read file")
+        f.close()
+
+def save_file(file_name,student):
+    f = None
+    try:
+        f = open(file_name,"a")
+        f.write(student + "\n")
+        f.close()
+    except Exception as e:
+        print("Could not save file",e)
+        f.close()
+
+#add_student("majid hussain")
+
+read_file("student.txt") # append to students list
 
 print(get_student_titlecase(students));
 
@@ -46,7 +66,8 @@ while True:
     if "Y" in choice:
         student_name = input("Enter student name: ")
         student_id = input("Enter id: ")
-        add_student(student_name,student_id)
+        #add_student(student_name,student_id)
+        save_file("student.txt",student_name)
     else:
         break;
 
