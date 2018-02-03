@@ -1,0 +1,7 @@
+    ----------------------------
+    v                          |
+1. Extract Data                |
+2. Organize/Clean up           |
+3. Analyze and create model    |
+4. Present (dashboard)         |
+5. Back to (1) -----------------
