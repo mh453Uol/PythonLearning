@@ -12,8 +12,8 @@ def extract_data(url,file_path):
         handle.write(response.replace('\n',''))
         #print(response.strip("\n"))
 
-train_csv = "https://raw.githubusercontent.com/pcsanwald/kaggle-titanic/master/train.csv"
-test_csv = "https://raw.githubusercontent.com/pcsanwald/kaggle-titanic/master/test.csv"
+train_csv = "https://raw.githubusercontent.com/moeabdol/kaggle-titanic/master/data/train.csv"
+test_csv = "https://raw.githubusercontent.com/moeabdol/kaggle-titanic/master/data/test.csv"
 
 # get path of titanic/data/raw 
 raw_data_path = os.path.join(os.path.pardir,"data","raw")
